@@ -1,0 +1,28 @@
+# Store student names and GPAs in two lists
+students = ["Jon", "Kim", "Lee", "Sara", "Miko",
+            "Lin", "Toby", "Ben", "Mark", "Xia"]
+
+gpas = [3.25, 2.25, 2.30, 4.00, 1.90,
+        2.10, 2.89, 2.75, 2.34, 3.53]
+
+# Calculate the average GPA
+total = sum(gpas)
+average = total / len(gpas)
+
+print("Average GPA:", round(average, 2))
+
+# Print students who are above the average
+print("\nStudents above average:")
+
+for i in range(len(students)):
+    if gpas[i] > average:
+        print(students[i], gpas[i])
+
+# Predict scholarship students
+# Based on the examples, students with a GPA of 2.75 or higher
+# are predicted to earn a scholarship.
+print("\nPredicted scholarship students:")
+
+for i in range(len(students)):
+    if gpas[i] >= 2.75:
+        print(students[i], gpas[i])
