@@ -10,5 +10,7 @@ def print_greetings(student_list):
     for name in student_list:
         print(f"Hi {name}")
 
+# change Jon to John
+students[0] = 'John'
 # call the function
 print_greetings(students)
