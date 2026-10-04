@@ -1,1 +1,0 @@
-The two responses given were not consistent, the first one only printed the student and GPA list while the second one also added calculations for the average, and it also was followed by a different introduction. This shows that a such prompt will give unpredictable output although both of these codes are suitable.
